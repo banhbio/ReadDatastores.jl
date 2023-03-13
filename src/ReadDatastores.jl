@@ -20,7 +20,8 @@ export
     @openreads,
     @reads_str
 
-using BioSequences, FASTX
+import BioSequences: BioSequences, Alphabet, DNAAlphabet, LongSequence
+import FASTX: FASTQ, FASTQ.Reader, FASTQ.Record, FASTQ.seqsize
 
 const ReadDatastoreMAGIC = 0x05D5
 
